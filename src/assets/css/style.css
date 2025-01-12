@@ -1,0 +1,36 @@
+@font-face {
+    font-family: DroidKufi;
+    src: url(/src/DroidKufi-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: DroidKufi ;
+}
+/* .arabic-font{
+    
+} */
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 1rem;
+}
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    .printbody {
+        display:block ; 
+        background: white;
+    } 
+    @media print { 
+        .calcBody ,button  {
+            display: none;
+        }
+        .printbody {
+            display: block;
+        }
+        @page {
+            size: 9cm 8cm; /* Set the dimensions to 8.5 inches by 11 inches (standard letter size) */
+            /* margin: 1cm; Set the margins to 1 centimeter  */
+        }
+    }
+    
